@@ -484,6 +484,8 @@ main.kontakt{
 main.fotogalerie {
 	background-color: black;
 	margin-top: -35px;
+}
+main.fotogalerie h1 {
 	font-family: Arial, Calibri, sans-serif;
 	text-align: center;
 	color: white;
