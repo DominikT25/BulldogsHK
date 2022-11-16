@@ -1,0 +1,636 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+}
+body {
+	background-image: url("../images/pozadi.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+		
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	background-color: white;
+	height: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+	body{
+	background-image: none;
+}
+.container{
+	width: 100%;
+}
+}
+
+/*** Header ****/
+
+.logo img {
+	width: 130px;
+	
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	background-color: black;
+	margin: 0 auto;
+
+}
+header .logo {
+	flex: 1;
+	margin-left: 10%;
+	margin-top: 0.5em;
+}
+
+header nav {
+	flex: 1;
+	margin-right: 10%;
+	margin-top: 4em;
+}
+
+header nav ul {
+	display: flex;
+	justify-content: flex-end;
+	gap: 5%;
+	list-style: none;
+	font-size: 1.6rem;
+	color: white;
+	font-weight: 400;
+	font-family: Arial, Calibri, sans-serif;
+	flex-direction: row;
+}
+header nav ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+header nav ul li:hover {
+	text-decoration: underline;
+	cursor: pointer;
+	font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 1200px) {
+header .logo {
+	margin-top: 0.8em;
+}
+header nav {
+	margin-right: 0;
+	margin-top: 1em;
+	padding-bottom: 1em;
+	
+}
+header nav ul {
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+
+}
+}
+@media only screen and (max-width: 500px) {
+header .logo img {
+	width: 100px;
+}
+header .logo {
+
+	padding-bottom:1rem
+}
+header nav ul {
+	gap: 6px;
+}
+header nav ul li {
+	font-size: 1rem;
+}
+}
+	/***MAIN Mládež a Ženy***/
+
+main .wrapper {
+	display: block;
+	min-height: 100vh;
+	background-color: black;
+}
+.wrapper .navbar {
+	
+	background-color: black;
+	margin-bottom: -10px;
+
+}
+main .wrapper .navbar h2 {
+	margin-top: 0px;
+	padding-top: 30px;
+	text-align: center;
+	font-family: Arial, Calibri, sans-serif;
+	color: white;
+	font-size: 30px;
+	font-weight: 500;
+
+}
+.wrapper .obsah {
+	margin-top: 20px;
+	
+}
+.wrapper ul {
+	margin-top: 20px;
+	}
+.wrapper ul li {
+	list-style: none;
+	padding-top: 6px;
+	text-align: center;
+	font-size: 1.5rem;
+	color: black;
+	font-family: Arial, Calibri, sans-serif;
+	margin-bottom: 0px;
+	height: 40px;
+	padding-bottom: 0px;
+	border-top: 1px solid black;
+	background-color: white;
+
+}
+.wrapper ul li a {
+	color: black;
+	text-decoration: none;
+}
+.wrapper ul li:hover {
+	background-color: #d9d9d9;
+	cursor: pointer;
+}
+.wrapper .obsah img {
+	width: 100%;
+	margin-top: -10px;
+	margin-bottom: -11px;
+	height: 100%;
+}
+@media only screen and (max-width: 500px) {
+main .wrapper .navbar h2 {
+	font-size: 25px;
+	
+}
+}
+
+/***Main Muzi, U7, U9, U11, U13, U15, U18, 
+ * ŽENY-U9, ŽENY-U11, ŽENY-U13, ŽENY-U15,
+ * ŽENY-U18, ŽENY-A-TÝM ***/
+.mančafty {
+	background-color: white;
+}
+.mančafty img {
+	width: 100%;
+}
+.rozlozeni {
+	display: flex;
+
+}
+.tabulka {
+	flex: 1;
+}
+.treninky {
+	flex: 1;
+}
+.treninky h2 {
+	font-size: 2rem;
+	font-family: Arial, Calibri, sans-serif;
+	text-align: center;
+	margin-top: 20px;
+}
+@media only screen and (max-width: 1200px) {
+.rozlozeni {
+	display: block;
+} 
+}
+
+
+/***Main Úvodní strana ****/
+.uvodnistrana{
+	background-color: white;
+	min-height: 100vh;
+
+}
+.uvodnistrana .uvodniobrazek {
+	position: relative;
+	width: 100%;
+}
+.uvodnistrana .uvodniobrazek img {
+	width: 100%;
+	
+}
+.uvodnistrana .uvodniobrazek button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	background-color: transparent;
+	border: white 2px solid;
+	border-radius: 10%;
+	padding: 2%;
+	font-size: 1.3rem;
+	background-color: rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	font-weight: bold;
+	font-family: Arial, Calibri, sans-serif;
+
+}
+.uvodnistrana .uvodniobrazek button:hover {
+	font-size: 1.4rem;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.uvodnistrana .uvodniobsah {
+	display: flex;
+}
+.uvodnistrana .zpravy {
+	flex: 1;
+}
+.uvodnistrana .tabulka {
+	flex: 1;
+}
+.uvodnistrana .zpravy h2 {
+	font-size: 2rem;
+	font-family: Arial, Calibri, sans-serif;
+	text-align: center;
+	margin-top: 20px;
+	
+}
+.uvodnistrana .zpravy h3{
+	font-size: 1.5rem;
+	margin-top: 20px;
+	margin-left: 5%;
+	margin-right: 5%;
+	font-family: Arial, Calibri, sans-serif;
+}
+.uvodnistrana .zpravy p{
+	margin-top: 5px;
+	font-size: 1.2rem;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 10px;
+	font-family: Arial, Calibri, sans-serif;
+}
+.zpravy img{
+	width: 80%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.tabulka h2 {
+	font-size: 2rem;
+	font-family: Arial, Calibri, sans-serif;
+	text-align: center;
+	margin-top: 20px;
+}
+.tabulka table {
+	border-collapse: collapse;
+	margin: 50px auto;
+	font-size: 1.2rem;
+	width: 80%;
+	
+}
+.tabulka th{
+	text-align: center;
+	padding: 12px 15px;
+	background-color: black;
+	color: white;
+	font-family: Arial, Calibri, sans-serif;
+}
+.tabulka td{
+	text-align: center;
+	padding: 12px 15px;
+	font-family: Arial, Calibri, sans-serif;
+}
+.tabulka tr {
+	color: black;
+	text-align: left;
+	border-bottom: 1px solid #dddddd;
+}
+.tabulka tr:nth-of-type(even) {
+	background-color: #f3f3f3;
+}
+@media only screen and (max-width: 500px) { 
+.tabulka table {
+	font-size: 1rem;
+	}
+.tabulka th{
+	padding: 9px 11px;
+	
+}
+.tabulka td{
+	padding: 9px 11px;
+}
+}
+
+@media only screen and (max-width: 1200px) {
+
+.uvodnistrana .uvodniobsah {
+	flex-direction: column;
+}
+.uvodniobsah .zpravy{
+	text-align: center;
+}
+}
+/***Kontakt***/
+ .kontakt {
+ 	min-height: 100vh;
+ }
+ .kontakt .obal {
+ 	position: relative;
+ }
+ .obal img {
+ 	width: 100%;
+ }
+
+ .obal h2 {
+ 	position: absolute;
+ 	top: 50%;
+ 	left: 50%;
+ 	color: white;
+ 	transform: translate(-50%, -50%);
+ 	font-family: Arial, Calibri, sans-serif;
+ 	font-size: 5vw;
+
+}
+.obal p {
+	position: absolute;
+ 	top: 50%;
+ 	left: 50%;
+ 	color: white;
+ 	transform: translate(-50%, -50%);
+ 	font-family: Arial, Calibri, sans-serif;
+ 	font-size: 1vw;
+ 	text-align: center;
+ 	background-color: rgba(0, 0, 0, 0.6);
+ 	padding: 40px;
+ 	border-radius: 20%;
+ 	
+}
+.obal p span.nadpis {
+	font-size: 2vw;
+	text-align: center;
+	
+}
+.kontakt4 {
+	width: 100%;
+	margin-top: -10px;
+	margin-bottom: -20px;
+	padding-bottom: 10px;
+}
+.kontakt3{
+	margin-top: -10px;
+}
+
+@media only screen and (max-width: 700px){
+.obal h2 {
+	font-size: 6vw;
+}
+main.kontakt{
+	background-color: black;
+	
+}
+
+}
+@media only screen and (max-width: 1400px){
+.obal p {
+	font-size: 2vw;
+}
+.obal p span.nadpis {
+	font-size: 3vw;
+	
+}
+}
+@media only screen and (max-width: 650px){
+.obal p {
+	font-size: 3vw;
+}
+.obal p span.nadpis {
+	font-size: 4vw;
+	
+}
+} 
+/***Přihláška***/
+.prihlaskacontainer{
+	width: 100%;
+	min-height: 100vh;
+	background-image: url("../images/prihlaska.jpg");
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.prihlaskacontainer form {
+	background: white;
+	display: flex;
+	flex-direction: column;
+	padding: 2vw 4vw;
+	width: 90%;
+	max-width: 600px;
+	border-radius: 10px;
+}
+.prihlaskacontainer form h3 {
+	color: black;
+	font-weight: 800;
+	margin-bottom: 20px;
+	font-family: Arial, Calibri, sans-serif;
+}
+.prihlaskacontainer form input, form textarea{
+	border: 0;
+	margin: 10px 0;
+	padding: 20px;
+	outline: none;
+	background: #f5f5f5;
+	font-size: 16px;
+	font-family: Arial, Calibri, sans-serif;
+
+
+}
+.prihlaskacontainer form input::placeholder, form textarea::placeholder {
+	color: black;
+}
+.prihlaskacontainer form button{
+	padding: 15px;
+	background: black;
+	color: white;
+	font-size: 18px;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	width: 150px;
+	margin: 20px auto 0;
+	border-radius: 30px;
+}
+
+@media only screen and (max-width: 500px){
+.prihlaskacontainer form {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.prihlaskacontainer form input, form textarea{
+	
+	font-size: 14px;
+	
+
+}
+.prihlaskacontainer form button{
+	padding: 13px;
+	font-size: 16px;
+	
+}
+}
+
+/***Fotogalerie***/
+main.fotogalerie {
+	background-color: black;
+	margin-top: -35px;
+}
+	{
+	font-family: Arial, Calibri, sans-serif;
+	text-align: center;
+	color: white;
+	margin: 30px 0 50px;
+	padding-top: 15px;
+	font-size: 2.5rem;
+	font-weight: 500;
+
+}
+.fotogalerie .galerie{
+	display: flex;
+	flex-wrap: wrap;
+}
+.galerie img {
+	width: 50%;
+}
+
+
+@media only screen and (max-width: 700px){
+main.fotogalerie h1{
+	font-size: 2rem;
+
+}
+}
+
+@media only screen and (max-width: 1200px){
+.galerie img {
+	width: 100%;
+}
+}
+@media only screen and (max-width: 500px){
+main.fotogalerie h1{
+	font-size: 1.5rem;
+
+}
+}
+/***Zdroje***/
+	main.zdroje .odkazy{
+	width: 100%;
+	min-height: 100vh;
+	background-image: url("../images/prihlaska.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.odkazy .citace {
+	width: 70%;
+	margin: 0 auto;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+.citace ul li {
+	line-height: 25px;
+	list-style: none;
+	margin-left: 30px;
+
+}
+.citace ul li a:link{
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+
+
+}
+.citace ul li a:visited{
+	color: blue;
+	
+}
+@media only screen and (max-width: 1200px) {
+.odkazy .citace{
+	width: 100%;
+}
+.citace ul li {
+	margin-left: 20px;
+}
+.citace ul li a {
+	font-size: 15px;
+}
+}
+@media only screen and (max-width: 650px) {
+.citace ul li a {
+	font-size: 11px;
+}
+.citace ul li {
+	margin-left: 0px;
+}	
+}
+
+
+
+/***Paticka****/
+
+.paticka ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	justify-content: space-around;
+	height: 50px;
+	background-color: black;
+	color: white;
+	align-items: flex-end;
+	margin-top: -0.8px;
+	
+	
+
+
+
+}
+.paticka ul li{
+	font-family: Arial, Calibri, sans-serif;
+	margin-bottom: 15px;
+
+}
+.paticka li a{
+	color: white;
+	text-decoration: none;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+.paticka ul {
+	height: 90px;
+
+}
+}
+
+@media only screen and (max-width: 500px) {
+.paticka ul {
+	font-size: 0.9rem;
+}
+.paticka .li1,.li2{
+	padding-top: 8px;
+}
+}
+
+ 
+
+
+
+
+
+	
+
+
+
