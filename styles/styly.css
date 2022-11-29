@@ -706,3 +706,53 @@ main.zdroje .odkazy {
         padding-top: 8px;
     }
 }
+
+/***Tisk***/
+@media print {
+        header {
+        display: none;
+    }
+
+    footer, .paticka {
+        display: none;
+    }
+
+    .container {
+        width: 95%;
+    
+    }
+
+    .navbar{
+        display: none;
+    }
+    .uvodniobrazek, button{
+        display: none;
+    }
+    .obal img {
+        display: none;
+    }
+    img.kontakt4{
+        display: none;
+    }
+    .obal h2{
+        display: none;
+        
+    }
+    .obal p, .nadpis {
+        font-size: 30px;
+        margin-top: 200px;
+        color: black;
+    }
+
+    p, h1, h2, h3 {
+        color: black;
+    }
+    .fotogalerie h1 {
+        color: black;
+    }
+    th {
+        color: black;
+    }
+    
+
+}
